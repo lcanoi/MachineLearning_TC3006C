@@ -20,18 +20,12 @@
 
 ## Predicciones de prueba
 
-| Predicciones | Iris-setosa | Iris-versicolor | Iris-virginica |
-| Iris-setosa | 10 | 0 | 0 |
-
-| Iris-versicolor | 0 | 9 | 0 |
-| Iris-virginica | 0 | 0 | 11 |
-
-| Reales | ----------- | --------------- | -------------- |
-
-| Predicciones| Description | Test Text     | Test 2  |
-| :---        |    :----:   |          ---: | a       |
-| Header      | Title       | Here's this   | b       |
-| Paragraph   | Text        | And more      | c       |
+| Predicciones    | Iris-setosa | Iris-visecolor | Iris-virginica |
+|-----------------|-------------|----------------|----------------|
+| Reales          |             |                |                |
+| Iris-setosa     | 10          | 0              | 0              |
+| Iris-versicolor | 0           | 9              | 0              |
+| Iris-virginica  | 0           | 0              | 11             |
 
 ## Archivo a revisar
 - NoFramework_ML.py
