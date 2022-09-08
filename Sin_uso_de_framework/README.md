@@ -19,8 +19,10 @@
   - (predicciones acertadas / total de predicciones)
 
 ## Predicciones de prueba
+
 | Predicciones | Iris-setosa | Iris-versicolor | Iris-virginica |
 | Iris-setosa | 10 | 0 | 0 |
+
 | Iris-versicolor | 0 | 9 | 0 |
 | Iris-virginica | 0 | 0 | 11 |
 
