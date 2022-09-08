@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 
 '''
-Modelo: Regresión Logística
+Modelo: Regresión Logística Multiclase
 Entradas: petal length, petal width, sepal length, sepal width
 Salidas: 0, 1, 2 (iris-setosa, iris-versicolor, iris-virginica)
 Hipótesis: z = wx + b
