@@ -17,7 +17,7 @@ from sklearn.neural_network import MLPClassifier
 
 # Input y Output de Data
 irisColumns = ['f1','f2','f3','f4','output']
-df = pd.read_csv('data/iris.data', names=irisColumns)
+df = pd.read_csv('./data/iris.data', names=irisColumns)
 
 # Cambiar output de especies a números [0,1,2]
 factor = pd.factorize(df['output'])

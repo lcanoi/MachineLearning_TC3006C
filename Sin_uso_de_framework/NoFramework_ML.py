@@ -12,7 +12,7 @@ Activación: sigmoid(z)
 
 # Input y Output de Data
 irisColumns = ['f1','f2','f3','f4','output']
-df = pd.read_csv('data/iris.data', names=irisColumns)
+df = pd.read_csv('./data/iris.data', names=irisColumns)
 
 # Cambiar output de especies a números [0,1,2]
 factor = pd.factorize(df['output'])
@@ -56,7 +56,7 @@ weights = np.zeros((variables, classes))
 
 bias = np.zeros((1, classes))
 
-lr = 10e-2
+lr = 10e-3
 epochs = 1000
 
 print("Starting Vaues\n______________________\n")
