@@ -27,7 +27,7 @@
 | Iris-versicolor | 0           | 9              | 0              |
 | Iris-virginica  | 0           | 0              | 11             |
 
-Con test_size=0.2, random_state = 42, lr = 10e-3 y epochs = 1000 alcanzamos accuracy de 1.0
+Con test_size = 0.2, random_state = 42, lr = 10e-3 y epochs = 1000 alcanzamos accuracy de 1.0
 
 ## Archivo a revisar
 - NoFramework_ML.py
