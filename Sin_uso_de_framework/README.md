@@ -29,10 +29,10 @@
 | Reales | ----------- | --------------- | -------------- |
 
 
-| Syntax | Description |
+| Syntax | Description | Syntax | Description |
 | --- | ----------- |
-| Header | Title |
-| Paragraph | Text |
+| Header | Title | Header | Title |
+| Paragraph | Text | Header | Title |
 
 ## Archivo a revisar
 - NoFramework_ML.py
