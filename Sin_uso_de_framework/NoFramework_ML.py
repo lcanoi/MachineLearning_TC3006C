@@ -96,7 +96,7 @@ for i in range(len(x_test)):
 
 # La métrica de desempeño del modelo es la accuracy
 # predicciones acertadas / total de predicciones
-print("Test Accuracy: ", np.sum(y_pred == y_test)/len(y_test))
+print("Test Accuracy: ", np.sum(y_pred == y_test)/len(y_test), "\n\n")
 
 # Convertimos de vuelta los números a las especies
 revFactor = dict(zip(range(classes),species))
@@ -104,5 +104,6 @@ y_test_rf = np.vectorize(revFactor.get)(y_test)
 y_pred_rf = np.vectorize(revFactor.get)(y_pred)
 
 # Matriz de confusión
-cross_tab_data = pd.crosstab(y_test_rf, y_pred_rf, rownames=['Reales'], colnames=['Predicciones'])
-print(pd.crosstab(y_test_rf, y_pred_rf, rownames=['Reales'], colnames=['Predicciones']))
+print("Test data predictions:\n")
+print("Confusion Matrix\n________________\n")
+print(pd.crosstab(y_test_rf, y_pred_rf, rownames=['Real'], colnames=['Predictions']))
