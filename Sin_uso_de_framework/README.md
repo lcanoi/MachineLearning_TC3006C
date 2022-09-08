@@ -4,3 +4,8 @@
 3. Prueba tu implementación con un set de datos y realiza algunas predicciones. Las predicciones las puedes correr en consola o las puedes implementar con una interfaz gráfica apoyándote en los visto en otros módulos.
 4. Tu implementación debe de poder correr por separado solamente con un compilador, no debe de depender de un IDE o de un “notebook”. Por ejemplo, si programas en Python, tu implementación final se espera que esté en un archivo .py no en un Jupyter Notebook.
 5. Después de la entrega intermedia se te darán correcciones que puedes incluir en tu entrega final.
+
+## Librerías utilizadas
+- import pandas as pd
+- import numpy as np
++ from sklearn.model_selection import train_test_split
