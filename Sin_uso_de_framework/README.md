@@ -28,11 +28,10 @@
 
 | Reales | ----------- | --------------- | -------------- |
 
-
-| Syntax | Description | Syntax | Description |
-| --- | ----------- |
-| Header | Title | Header | Title |
-| Paragraph | Text | Header | Title |
+| Syntax      | Description | Test Text     |
+| :---        |    :----:   |          ---: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |
 
 ## Archivo a revisar
 - NoFramework_ML.py
