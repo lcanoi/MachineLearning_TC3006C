@@ -8,4 +8,22 @@
 ## Librerías utilizadas
 - import pandas as pd
 - import numpy as np
-+ from sklearn.model_selection import train_test_split
+- from sklearn.model_selection import train_test_split
+
+## Dataset usado
+- iris.data
+  - (https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
+
+## Métrica de desempeño
+- Accuracy
+  - (predicciones acertadas / total de predicciones)
+
+## Predicciones de prueba
+Predicciones     Iris-setosa  Iris-versicolor  Iris-virginica
+Reales
+Iris-setosa               10                0               0
+Iris-versicolor            0                9               0
+Iris-virginica             0                0              11
+
+## Archivo a revisar
+- NoFramework_ML.py
