@@ -8,7 +8,14 @@
 ## Librerías utilizadas
 - import pandas as pd
 - import numpy as np
+- from sklearn.preprocessing import StandardScaler
 - from sklearn.model_selection import train_test_split
+- from sklearn.metrics import accuracy_score
+
+- from sklearn.neighbors import KNeighborsClassifier
+- from sklearn.linear_model import LogisticRegression
+- from sklearn.tree import DecisionTreeClassifier
+- from sklearn.ensemble import RandomForestClassifier
 
 ## Dataset usado
 - iris.data
@@ -23,11 +30,12 @@
 | Predicciones    | Iris-setosa | Iris-visecolor | Iris-virginica |
 |-----------------|-------------|----------------|----------------|
 | Reales          |             |                |                |
-| Iris-setosa     | 10          | 0              | 0              |
-| Iris-versicolor | 0           | 9              | 0              |
-| Iris-virginica  | 0           | 0              | 11             |
+| Iris-setosa     | 29          | 0              | 0              |
+| Iris-versicolor | 0           | 23             | 0              |
+| Iris-virginica  | 0           | 0              | 23             |
 
-Con test_size = 0.3 y random_state = 42 alcanzamos accuracy de 1.0
+Con test_size = 0.5 y random_state = 42 alcanzamos accuracy de 1.0 en 
+modelos de árboles.
 
 ## Archivo a revisar
 - NoFramework_ML.py
