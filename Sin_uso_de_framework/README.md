@@ -28,10 +28,10 @@
 
 | Reales | ----------- | --------------- | -------------- |
 
-| Predicciones| Description | Test Text     |
-| :---        |    :----:   |          ---: |
-| Header      | Title       | Here's this   |
-| Paragraph   | Text        | And more      |
+| Predicciones| Description | Test Text     | Test 2  |
+| :---        |    :----:   |          ---: | a       |
+| Header      | Title       | Here's this   | b       |
+| Paragraph   | Text        | And more      | c       |
 
 ## Archivo a revisar
 - NoFramework_ML.py
