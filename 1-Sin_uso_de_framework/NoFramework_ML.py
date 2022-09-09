@@ -24,7 +24,7 @@ input = df[['f1','f2','f3','f4']].values
 output = df['output'].values
 
 # Dividir datos en train y test
-x_train, x_test, y_train, y_test = train_test_split(input, output, test_size = 0.2, random_state = 42)
+x_train, x_test, y_train, y_test = train_test_split(input, output, test_size = 0.6, random_state = 42)
 
 variables = len(df.columns) - 1 # 4
 classes = len(df['output'].unique()) # 3
