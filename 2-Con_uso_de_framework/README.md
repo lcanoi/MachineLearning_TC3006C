@@ -11,11 +11,12 @@
 - from sklearn.preprocessing import StandardScaler
 - from sklearn.model_selection import train_test_split
 - from sklearn.metrics import accuracy_score
-
-- from sklearn.neighbors import KNeighborsClassifier
-- from sklearn.linear_model import LogisticRegression
 - from sklearn.tree import DecisionTreeClassifier
-- from sklearn.ensemble import RandomForestClassifier
+- from matplotlib import pyplot as plt
+- import seaborn as sns
+- from sklearn import tree
+- from sklearn.model_selection import GridSearchCV
+- from sklearn.model_selection import RandomizedSearchCV
 
 ## Dataset usado
 - iris.data
@@ -30,12 +31,11 @@
 | Predicciones    | Iris-setosa | Iris-visecolor | Iris-virginica |
 |-----------------|-------------|----------------|----------------|
 | Reales          |             |                |                |
-| Iris-setosa     | 29          | 0              | 0              |
-| Iris-versicolor | 0           | 23             | 0              |
-| Iris-virginica  | 0           | 0              | 23             |
+| Iris-setosa     | 10          | 0              | 0              |
+| Iris-versicolor | 0           | 9              | 0              |
+| Iris-virginica  | 0           | 0              | 11             |
 
-Con test_size = 0.5 y random_state = 42 alcanzamos accuracy de 1.0 en 
-modelos de árboles.
+Con test_size = 0.2
 
 ## Archivo a revisar
-- NoFramework_ML.py
+- Framework_ML.py
