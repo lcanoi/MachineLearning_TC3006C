@@ -23,8 +23,9 @@
   - (https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
 
 ## Métrica de desempeño
-- accuracy_score
+- Promedio de accuracy_score
   - (Accuracy classification score. This function computes subset accuracy)
+  - Se realiza una validación cruzada (5 folds) y la precisión promedio es el resultado que consideramos
 
 ## Predicciones de prueba
 
