@@ -15,19 +15,27 @@
   - (https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
 
 ## Métrica de desempeño
-- Accuracy
+- Accuracy = 0.9866
   - (predicciones acertadas / total de predicciones)
+  - Con otros random_state alcanzamos Test Accuracy de 1.0 (18, 26, 42)
 
 ## Predicciones de prueba
 
-| Predicciones    | Iris-setosa | Iris-visecolor | Iris-virginica |
-|-----------------|-------------|----------------|----------------|
-| Reales          |             |                |                |
-| Iris-setosa     | 10          | 0              | 0              |
-| Iris-versicolor | 0           | 9              | 0              |
-| Iris-virginica  | 0           | 0              | 11             |
-
-Con test_size = 0.2, random_state = 42, lr = 10e-3 y epochs = 1000 alcanzamos accuracy de 1.0
+1 )  [5.1, 3.5, 1.4, 0.2]
+Predicción:  Iris-setosa
+Esperado: Iris-setosa
+2 )  [5.0, 3.3, 1.4, 0.2]
+Predicción:  Iris-setosa
+Esperado: Iris-setosa
+3 )  [5.5, 2.3, 4.0, 1.3]
+Predicción:  Iris-versicolor
+Esperado: Iris-versicolor
+4 )  [6.2, 2.9, 4.3, 1.3]
+Predicción:  Iris-versicolor
+Esperado: Iris-versicolor
+5 )  [6.3, 2.8, 5.1, 1.5]
+Predicción:  Iris-virginica
+Esperado: Iris-virginica
 
 ## Archivo a revisar
 - NoFramework_ML.py
