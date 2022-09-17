@@ -17,7 +17,7 @@
 ## Métrica de desempeño
 - Accuracy = 0.9866
   - (predicciones acertadas / total de predicciones)
-  - Con otros random_state alcanzamos Test Accuracy de 1.0 (18, 26, 42)
+  - Con otros random_state (18, 26, 42) alcanzamos Test Accuracy de 1.0 
 
 ## Predicciones de prueba
 
