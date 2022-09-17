@@ -86,7 +86,39 @@ modelNo = 0
 ''' /// VISUALIZACIÓN DE RESULTADOS /// '''
 
 # Muestra de las predicciones del modelo entrenado
-print("Predictions of the", models[modelNo][0], "model with the test subset")
+print("Predictions of the", models[modelNo][0], "model\n")
+
+# Predicciones puntuales
+p1 = [5.1,3.5,1.4,0.2] # Iris-setosa
+p2 = [5.0,3.3,1.4,0.2] # Iris-setosa
+p3 = [5.5,2.3,4.0,1.3] # Iris-versicolor
+p4 = [6.2,2.9,4.3,1.3] # Iris-versicolor
+p5 = [6.3,2.8,5.1,1.5] # Iris-virginica
+pArr = [p1, p2, p3, p4, p5]
+
+print("5 punctual predictions:")
+for i in range(len(pArr)):
+    print(i+1, ") ", pArr[i])
+    # Como normalizamos los datos para el entrenamiento, debemos normalizar
+    # los datos de las predicciones puntuales
+    pArr[i] = scaler.transform([pArr[i]])
+    y_pred = model.predict(pArr[i])
+    print("Prediction: ", np.vectorize(revFactor.get)(y_pred))
+    if i <= 1:
+        print("Expected: Iris-setosa")
+    elif i <= 3:
+        print("Expected: Iris-versicolor")
+    else:
+        print("Expected: Iris-virginica\n")
+
+
+# for i in range(len(pArr)):
+#     y_pred = models[modelNo][1].predict([pArr[i]])
+#     print(i+1, ") ", pArr[i])
+#     print("Predicted: ", y_pred, " - ", np.vectorize(revFactor.get)(y_pred))
+#     # Valores esperados para los 5 puntos:
+    
+
 print("Confusion Matrix\n________________\n")
 print(xtab[modelNo], "\n")
 
@@ -130,7 +162,7 @@ print("Mean test accuracy:", cv_results['test_score'].mean())
 print("Mean train accuracy:", cv_results['train_score'].mean())
 print("Standard deviation: ", cv_results['test_score'].std())
 print("Variance: ", cv_results['test_score'].var())
-print("Bias: ", 1 - cv_results['test_score'].mean())
+print("Bias: ", 1 - cv_results['test_score'].mean(),"\n")
 
 
 ''' /// MEJORAR DESEMPEÑO DEL MODELO /// '''
@@ -156,6 +188,6 @@ clf = RandomizedSearchCV(DecisionTreeClassifier(), param_grid, cv=5, n_jobs = -1
 clf.fit(input, output)
 
 # Imprimimos los mejores hiperparámetros
-print("Best parameters found by the grid search:")
+print("Best parameters found by the randomized grid search:")
 print(clf.best_params_)
 
