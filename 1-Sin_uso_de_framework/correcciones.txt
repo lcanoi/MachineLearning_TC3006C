@@ -1,0 +1,2 @@
+Originalmente se hizo un perceptrón el cual aún no estaba completado para realizar multiclasificación (solo binaria).
+Se cambió completamente y se realizó una Regresión Logística para multiclasificación (3 clases).

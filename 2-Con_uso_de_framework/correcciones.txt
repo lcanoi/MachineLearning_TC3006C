@@ -1,0 +1,1 @@
+En lugar de utilizar sólo la Matriz de Confusión para mostrar los resultados de predicciones, agregué 5 predicciones puntuales, incluyendo valores de 5 entradas, salidas esperadas, y salidas obtenidas por predicción
